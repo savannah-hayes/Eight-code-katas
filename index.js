@@ -1,32 +1,14 @@
-const booleanToString = (boolean) => {
-  if(boolean === true || boolean === false) {
-    return boolean.toString()
-  } else {
-    return "You did not pass in a boolean!";
-  }
-};
+const booleanToString = boolean => boolean === true || boolean === false ? boolean.toString() : "Not a boolean!";
 
-const main = (verb, noun) =>  {
-  return verb + " " + noun;
-}
+const main = (verb, noun) => `${verb} ${noun}`;
 
-const checkAlive = (health) => {
-  if (health <= 0) {
-    return false
-  } else {
-    return true
-  }
-}
+const checkAlive = health => health <= 0 ? false : true;
 
 const isPalindrome = (str) => {
   const caseInsensitive = str.toLowerCase();
   const reversedString = caseInsensitive.split("").reverse().join("");
 
-  if (str.length === 0 || caseInsensitive === reversedString) {
-    return true
-  } else {
-    return false
-  }
+  return str.length === 0 || caseInsensitive === reversedString ? true : false;
 };
 
 const findAverage = (nums) => {
@@ -35,31 +17,14 @@ const findAverage = (nums) => {
   return addedNumbers / numberOfValues;
 };
 
-const makeNegative = (num) => {
-  if (num > 0) {
-    return num * -1
-  }
-  return num
+const makeNegative = num => num > 0 ? num * -1 : num;
+
+const twoOldestAges = ages => ages.sort((a, b) => a - b).slice(- 2);
+
+const filter_list = arr => arr.filter(item => typeof item === "number");
+
+module.exports = { 
+  booleanToString, main, checkAlive, isPalindrome, findAverage, makeNegative, twoOldestAges, filter_list
 };
 
-const twoOldestAges = (ages) => {
-  const sortedArray = ages.sort((a, b) => a - b);
-   ages = sortedArray.slice(- 2);
-   return ages
-};
-
-const filter_list = (arr) => {
-  const onlyDigits = arr.filter(item => typeof item === "number")
-  return onlyDigits;
-};
-
-
-module.exports.booleanToString = booleanToString;
-module.exports.main = main;
-module.exports.checkAlive = checkAlive;
-module.exports.isPalindrome = isPalindrome;
-module.exports.findAverage = findAverage;
-module.exports.makeNegative = makeNegative;
-module.exports.twoOldestAges = twoOldestAges;
-module.exports.filter_list = filter_list;
 
