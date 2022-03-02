@@ -26,8 +26,8 @@ describe("Eight code katas to help sharpen your skills through practice and repe
   });
 
   describe("Function syntax debugging", () => {
-    it("tests that checkAlive is a function", () => {
-      assert.isFunction(checkAlive);
+    it("tests that main is a function", () => {
+      assert.isFunction(main);
     });
     it("should return first parameter a verb plus second parameter a noun into a string", () => {
       const expected = "take item";
