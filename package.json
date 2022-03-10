@@ -2,7 +2,7 @@
   "name": "codewar",
   "version": "1.0.0",
   "description": "Katas lab for Technigo",
-  "main": "index.js",
+  "main": "eight-mini-katas.js",
   "scripts": {
     "test": "mocha --reporter spec --exit **.spec.js"
   },

@@ -9,9 +9,9 @@ const {
   makeNegative,
   twoOldestAges,
   filter_list,
-} = require("./index.js");
+} = require("./eight-mini-katas.js");
 
-describe("Eight code katas to help sharpen your skills through practice and repetition.", () => {
+describe("Eight mini code katas", () => {
   describe("Convert a Boolean to a String", () => {
     it("should return string 'true' when boolean true is passed in", () => {
       const expected = "true";

@@ -1,0 +1,25 @@
+1. Jenny has written a function that returns a greeting for a user. However, she's in love 
+with Johnny, and would like to greet him slightly different. She added a special case to 
+her function, but she made a mistake.
+
+Can you help her?
+
+2. The code provided is supposed replace all the dots (.) in the specified String str with dashes (-)
+But it's not working properly.
+
+Task
+Fix the bug so we can all go home early.
+
+Notes
+String str will never be null.
+
+3. Convert number to reversed array of digits
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+
+4. Triple Trouble
+Create a function that will return a string that combines all of the letters of the three inputed strings in groups.
+Taking the first letter of all of the inputs and grouping them next to each other. Do this for every letter, see example below!
+
+E.g. Input: "aa", "bb" , "cc" => Output: "abcabc"
+
+Note: You can expect all of the inputs to be the same length.
